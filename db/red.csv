@@ -1,0 +1,97 @@
+﻿ID,level,probability,effectjp,effecten
+1,1~3,0.0011,健康,STR
+2,1~10,0.0284,攻撃訓練経験を投げる,Throwing Attack Training Experience
+3,1~10,0.0011,急いでいる睡蓮の経験,Rushing water lily experience
+4,1~10,0.0011,防衛睡蓮の経験,Defense water lily experience
+5,1~10,0.0011,ランス職業訓練経験,Lance occupation training experience
+6,1~10,0.0011,ランスカウンターウィリー体験,Lance Counter Water Lily Experience
+7,1~10,0.0011,足の従業員,Employees of foot
+8,1~10,0.0011,風車トレーニング経験,Windmill training experience
+9,1~10,0.0055,カウンターアタックウォーターユリの経験,Counter Attack Water Lily Experience
+10,1~10,0.0153,臨界熱水のリリーの経験,Critical Heat Water Lily Experience
+11,1~20,0.0011,ダウン攻撃攻撃距離,Down Attack Attack Distance
+12,1~20,0.0011,退職損害,Down Affairs Damage
+13,1~20,0.0197,ダウンアタックカント削減,Down attack cunt reduction
+14,1~20,0.0153,攻撃損害を投げる,Throwing attack damage
+15,1~20,0.0284,Donjin Rang Dam Mijiの削減,Donjin Rang Dam Miji Reduction
+16,1,0.0055,盾なしでお金を寄付した人間とELFのために可能,Possible for money-donated human and elf without shield
+17,1~20,0.0011,ラッシュ最大距離,Rush Maximum Distance
+18,1~3,0.0197,最低ロバ最小距離,Minimum Donkey Minimum Distance
+19,1~20,0.0011,金軍事を寄付した金額を削減,Reduced money-donated military
+20,1~20,0.0284,防衛成功保護能力,Defense success protection capacity
+21,1~20,0.0284,防衛成功防衛能力,Defense Success Defense Ability
+22,1~20,0.0055,ランスマスタリー最大ダメージ,Lance Mastery Maximum Damage
+23,1~20,0.0153,ランスマスタリー最小ダメージ,Lance Mastery Minimum Damage
+24,1~5,0.0284,ランスマスターティクリティカル,Lance Mastery Critical
+25,1~20,0.0153,ランス職業被害,Lance occupation Damage
+26,1~20,0.0011,ランス職業,Lance Charge Horse Rush Damage
+27,1~20,0.0284,ランス口座,Lance account
+28,1~20,0.0197,ランスの追加距離,Lance Charge Horse Rush Additional Distance
+29,1~20,0.0284,ランススコープ幅の人間）,Lance scope width human)
+30,1~20,0.0284,ランススコープ幅（GAI）,Lance scope width (gai)
+31,1~20,0.0011,ランスチャージモクトブスターダメージ,Lance Charge Moktobsters Damage
+32,1~20,0.0197,ランス最大距離,Lance maximum distance
+33,1~5,0.0197,ランスチャージ育児タイム削減,Lance Charge Kuntimetime Reduction
+34,1~20,0.0284,ランスカウンター相対ダメージを改装しました,Lance Counter Relative Damage Refurbished
+35,1~5,0.0197,ランスカウンタークリエイティブダメージ,Lance Counter Creative Damage
+36,1~20,0.0011,ギャラリー攻撃の範囲,Gallery Attack Range
+37,1~20,0.0197,サルンのマスターのバランス,Balance of Salang Master
+38,1~20,0.0055,最高のDATマスターズ最大ダメージ,Best Dat Masters Maximum Damage
+39,1~20,0.0153,ランタンの習熟最小ダメージ,Lantern Mastery Minimum Damage
+40,1~5,0.0284,燃やされた習熟クリエイティブ,Burnt Mastery Creative
+41,1~20,0.0197,刀の習得バランス,Sword Mastery Balance
+42,1~20,0.0055,刀の習得最大被害,Sword Mastery Maximum Damage
+43,1~20,0.0153,刀の習得最小ダメージ,Sword Mastery Minimum Damage
+44,1~5,0.0284,刀の習得クリエイティブ,Sword Mastery Creative
+45,1~20,0.0011,壊れたダメージ,Smash Damage
+46,1~5,0.0197,セールスセキュリティの成功,Sales Security Success
+47,1~20,0.0011,Donjin Devers,Donjin Damage
+48,1~20,0.0197,マスタリーバランスにアクセスする,Access Mastery Balance
+49,1~20,0.0055,マスター最大ダメージへのアクセス,Access Master Maximum Damage
+50,1~20,0.0153,最大マスタリー最小ダメージ,Max Mastery Minimum Damage
+51,1~5,0.0284,AX Mastery Creative.,Ax Mastery Creative
+52,1~20,0.0153,ウインドブレーカー保護,Wind Breaker Protection
+53,1~20,0.0153,ウインドブレーカーの期間,Windbreaker duration
+54,1~20,0.0197,風ブレミルクンの時間短縮,Wind Bremirkkun Time Reduction
+55,1~20,0.0011,風車攻撃範囲,Windmill attack range
+56,1~20,0.0011,風車の損傷,Windmill Damage
+57,1~20,0.0284,カウンターアタック期間,Counter Attack Period
+58,1~20,0.0197,戦闘習熟バランス,Combat Mastery Balance
+59,1~20,0.0055,熟練する最大被害と戦う,Combat Mastery Maximum Damage
+60,1~20,0.0153,戦闘マスタリー最小ダメージ,Combat Mastery Minimum Damage
+61,1~20,0.0153,Tout範囲,Tout range
+62,1~20,0.0197,Tout期間,Tout duration
+63,1~20,0.0011,Tout Toutを強化します,Enhance Tout Tout
+64,1~20,0.0153,最大希望のモンスターの数の数,Number of Touts Maximum Wanted Monsters
+65,1~20,0.0197,最小限のモンスターモンスター数の最小数,Tout minimum number of monster monsters
+66,1~20,0.0011,最後のヒット瞬間移動距離,Final hit moment moving distance
+67,1~20,0.0011,最後のヒットのサステーション,Final Hit Sustaination
+68,1~20,0.0011,最終ヒット最大被害,Final Hit Maximum Damage
+69,1~20,0.0011,最後の打撃の最低損傷,Final hit Minimum Damage
+70,1~20,0.0055,最終的な熱冷時間の低減,Final Heat Cool Time Reduction
+71,1~20,0.0055,怒りの衝撃の損傷,Rage Impact Damage
+72,1~20,0.0055,RAGEの影響は厳格な時刻です,Rage impact rigid time
+73,1~20,0.0055,レイヤーインパクトKuntimeTimeの削減,Layer Impact Kuntimetime Reduction
+74,1~10,0.0055,Bonammer Bonusを着用するときは、魔法のシールドを保護します,Shield Mastery Shield When Wearing Bonammer Bonus
+75,1~10,0.0055,シールドマスターシールド保護ボーナス,Shield Mastery Shield Protective Bonus
+76,1~10,0.0055,シールドマスターシールドマジックマリアボーナス,Shield Mastery Shield Magic Marrier Bonus
+77,1~10,0.0055,シールドマスターシールドマジックプロテクションボーナス,Shield Mastery Shield Magic Protection Bonus
+78,1~10,0.0055,シールドマスターシールド着用時のクローズアップ自動ボーナス,Close-up automatic bonus when shielded Mastern Shield Wear
+79,1~10,0.0055,リモート自動機のボーナスを着ているシールドマスターシールド,Shield Mastery Shield Wearing Remote Automatic Machine Bonus
+80,1~10,0.0055,シールドされた習熟シールドの摩耗時の魔法自動防御ボーナス,Magic automatic defense bonus when shielded Mastery Shield Wear
+81,1~10,0.0055,ヘビーアーマーマスターズザ・ザ・ザ・ザ・ヘイザー,Heavy Armor Masters Defense when worning
+82,1~10,0.0011,重装甲マスター鎧を着用するときの保護,Heavy Armor Masters Protection when wearing armor
+83,1~10,0.0055,重いマーカーマスターズを着用するときの魔法の狂乱,Magic Marrier when Wear Heavy Marmers Masters
+84,1~10,0.0011,重装甲マスターを着用するときの魔法の保護,Magic Protection when Wear Heavy Armor Masters
+85,1~10,0.0055,重い装甲の習熟鎧を着ているときのクローズアップ自動ルーム,Close-up automatic room when wearing heavy armor mastery armor
+86,1~10,0.0055,ヘビーアーマーマスターズ,Heavy Armor Masters
+87,1~10,0.0055,重装甲マスターを着ているときの魔法の自動車部屋,Magic automatic room when wearing Heavy Armor Masters
+88,1~10,0.0055,ライトアーマーの習得の習得防御,Lite Armor Mastery Defense when worn
+89,1~10,0.0011,軽い装甲を身に着けているときの保護,Protection when wearing light armor Mastery
+90,1~10,0.0055,軽い装甲を身に着けているときの魔法の防衛,Magic defense when wearing light armor Mastory
+91,1~10,0.0011,ライトアーマーマスターズによって書かれました,Written by Wright Armor Masters
+92,1~20,0.0011,最終ストライク移動移動距離,Final Strike Move Movement Distance
+93,1~20,0.0011,最終的なストライク期間,Final Strike Duration
+94,1~20,0.0011,最終ストライククールな時間の削減,Final Strike Cool Time Reduction
+95,1~20,0.0011,STAMFEED KUNTIMETIMEの削減,Stampede cooldown reduced
+96,1~20,0.0011,STAMFEED近接バトルスキルの強化効果が増加しました,Stamfeed proximity battle skills increased enhancement effects

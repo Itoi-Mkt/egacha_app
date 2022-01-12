@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'csv'
+
+CSV.foreach('db/red.csv', headers: true) do |row|
+  RedP.create(
+    level:     row['level'],
+    probability:     row['probability'],
+    effectjp:     row['effectjp'],
+    effecten:     row['effecten'],
+  )
+end
