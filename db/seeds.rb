@@ -9,7 +9,7 @@
 require 'csv'
 
 CSV.foreach('db/red.csv', headers: true) do |row|
-  RedP.create(
+  RedProb.create(
     level:     row['level'],
     probability:     row['probability'],
     effectjp:     row['effectjp'],

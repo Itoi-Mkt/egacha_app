@@ -1,2 +1,0 @@
-class RedP < ApplicationRecord
-end

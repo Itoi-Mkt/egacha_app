@@ -1,0 +1,2 @@
+class RedProb < ApplicationRecord
+end
