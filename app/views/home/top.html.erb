@@ -1,2 +1,237 @@
 <h1>Home#top</h1>
 <p>Find me in app/views/home/top.html.erb</p>
+
+
+
+<body>
+<!--
+何故かこの書き方ではonchangeが働かない。form_withはonchangeの書き方が不明。
+完成させることの方が大事。
+<%= form_with do |f| %>
+  <%= f.select :ecolor, ["Red", "Blue", "Yellow", "Black", "Silver"] %>
+<% end %>
+
+<select id="ecolor2" onchange="myfunc()">
+    <option value="" selected>Please select...</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="yellow">Yellow</option>
+    <option value="black">Black</option>
+    <option value="silver">Silver</option>
+</select>
+
+<script>
+    function myfunc() {
+
+        var index = document.getElementById("ecolor2").selectedIndex;
+        var value = document.getElementById("ecolor2").value;
+
+        console.log("You have selected" + value+ ", with index "+index);
+    }
+</script>
+
+<script>
+'use strict';
+
+document.getElementById('ecolor').onchange = myfunc();
+function myfunc(){};
+
+</script>
+
+
+<%= form_with do |f| %>
+  <%= f.select :lnumber,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]%>
+<% end %>
+-->
+<p>Where do you live?</p>
+
+  <select id="ecolor" onchange="myfunc()">
+      <option value="" selected>Please select...</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option>
+      <option value="black">Black</option>
+      <option value="silver">Silver</option>
+  </select>
+  <p id="target">
+  </p>
+
+  <script>
+      function myfunc() {
+        var index = document.getElementById("ecolor").selectedIndex;
+        var value = document.getElementById("ecolor").value;
+        console.log("You have selected " + value+ ", with index "+index);
+      }
+  </script>
+
+
+
+  <%= form_with(model:@testtest , url: home_top_path) do |f| %>
+    <%= f.collection_select :effect , @redeff.all, :effectjp, :effectjp %>
+  <% end %>
+
+
+
+  <form action="" method="post">
+
+  		<p>国を選択して下さい</p>
+  		<select name="country">
+  			<option value="Japan" selected="selected" class="msg">1番目の要素を選択して下さい</option>
+  			<option value="red" class="red">red</option>
+  			<option value="America" class="America">アメリカ</option>
+  			<option value="Australia" class="Australia">オーストラリア</option>
+  		</select>
+
+  		<p>都市を選択して下さい</p>
+  		<select name="city">
+  			<!--<option value="Japan" selected="selected" class="msg">都市を選択して下さい</option>
+      初めの動作がで都市が選択できてしまう。-->
+        <option value="msg" selected="selected" class="msg">都市を選択して下さい</option>
+  			<option value="Tokyo" class="japan">東京</option>
+  			<option value="Kyoto" class="japan">京都</option>
+  			<option value="Osaka" class="japan">大阪</option>
+  			<option value="NY" class="America">ニューヨーク</option>
+  			<option value="LA" class="America">ロサンゼルス</option>
+  			<option value="Sydney" class="Australia">シドニー</option>
+
+        <option value="2" class="red"  class = "3">健康</option>
+        <option value="3" class="red 10">急いでいる睡蓮の経験</option>
+        <option value="4" class="red 10">防衛睡蓮の経験</option>
+        <option value="5" class="red 10">ランス職業訓練経験</option>
+        <option value="6" class="red 10">ランスカウンターウィリー体験</option>
+        <option value="7" class="red 10">足の従業員</option>
+        <option value="8" class="red 10">風車トレーニング経験</option>
+        <option value="9" class="red 10">カウンターアタックウォーターユリの経験</option>
+        <option value="10" class="red 10">臨界熱水のリリーの経験</option>
+        <option value="11" class="red 20">ダウン攻撃攻撃距離</option>
+        <option value="12" class="red 20">退職損害</option>
+        <option value="13" class="red 20">ダウンアタックカント削減</option>
+        <option value="14" class="red 20">攻撃損害を投げる</option>
+        <option value="15" class="red 20">Donjin Rang Dam Mijiの削減</option>
+        <option value="16" class="red 1">盾なしでお金を寄付した人間とELFのために可能</option>
+        <option value="17" class="red 20">ラッシュ最大距離</option>
+        <option value="18" class="red 3">最低ロバ最小距離</option>
+        <option value="19" class="red 20">金軍事を寄付した金額を削減</option>
+        <option value="20" class="red 20">防衛成功保護能力</option>
+        <option value="21" class="red 20">防衛成功防衛能力</option>
+        <option value="22" class="red 20">ランスマスタリー最大ダメージ</option>
+        <option value="23" class="red 20">ランスマスタリー最小ダメージ</option>
+        <option value="24" class="red 5">ランスマスターティクリティカル</option>
+        <option value="25" class="red 20">ランス職業被害</option>
+        <option value="26" class="red 20">ランス職業</option>
+        <option value="27" class="red 20">ランス口座</option>
+        <option value="28" class="red 20">ランスの追加距離</option>
+        <option value="29" class="red 20">ランススコープ幅の人間）</option>
+        <option value="30" class="red 20">ランススコープ幅（GAI）</option>
+        <option value="31" class="red 20">ランスチャージモクトブスターダメージ</option>
+        <option value="32" class="red 20">ランス最大距離</option>
+        <option value="33" class="red 5">ランスチャージ育児タイム削減</option>
+        <option value="34" class="red 20">ランスカウンター相対ダメージを改装しました</option>
+        <option value="35" class="red 5">ランスカウンタークリエイティブダメージ</option>
+        <option value="36" class="red 20">ギャラリー攻撃の範囲</option>
+        <option value="37" class="red 20">サルンのマスターのバランス</option>
+        <option value="38" class="red 20">最高のDATマスターズ最大ダメージ</option>
+        <option value="39" class="red 20">ランタンの習熟最小ダメージ</option>
+        <option value="40" class="red 5">燃やされた習熟クリエイティブ</option>
+        <option value="41" class="red 20">刀の習得バランス</option>
+        <option value="42" class="red 20">刀の習得最大被害</option>
+        <option value="43" class="red 20">刀の習得最小ダメージ</option>
+        <option value="44" class="red 5">刀の習得クリエイティブ</option>
+        <option value="45" class="red 20">壊れたダメージ</option>
+        <option value="46" class="red 5">セールスセキュリティの成功</option>
+        <option value="47" class="red 20">Donjin Devers</option>
+        <option value="48" class="red 20">マスタリーバランスにアクセスする</option>
+        <option value="49" class="red 20">マスター最大ダメージへのアクセス</option>
+        <option value="50" class="red 20">最大マスタリー最小ダメージ</option>
+        <option value="51" class="red 5">AX Mastery Creative.</option>
+        <option value="52" class="red 20">ウインドブレーカー保護</option>
+        <option value="53" class="red 20">ウインドブレーカーの期間</option>
+        <option value="54" class="red 20">風ブレミルクンの時間短縮</option>
+        <option value="55" class="red 20">風車攻撃範囲</option>
+        <option value="56" class="red 20">風車の損傷</option>
+        <option value="57" class="red 20">カウンターアタック期間</option>
+        <option value="58" class="red 20">戦闘習熟バランス</option>
+        <option value="59" class="red 20">熟練する最大被害と戦う</option>
+        <option value="60" class="red 20">戦闘マスタリー最小ダメージ</option>
+        <option value="61" class="red 20">Tout範囲</option>
+        <option value="62" class="red 20">Tout期間</option>
+        <option value="63" class="red 20">Tout Toutを強化します</option>
+        <option value="64" class="red 20">最大希望のモンスターの数の数</option>
+        <option value="65" class="red 20">最小限のモンスターモンスター数の最小数</option>
+        <option value="66" class="red 20">最後のヒット瞬間移動距離</option>
+        <option value="67" class="red 20">最後のヒットのサステーション</option>
+        <option value="68" class="red 20">最終ヒット最大被害</option>
+        <option value="69" class="red 20">最後の打撃の最低損傷</option>
+        <option value="70" class="red 20">最終的な熱冷時間の低減</option>
+        <option value="71" class="red 20">怒りの衝撃の損傷</option>
+        <option value="72" class="red 20">RAGEの影響は厳格な時刻です</option>
+        <option value="73" class="red 20">レイヤーインパクトKuntimeTimeの削減</option>
+        <option value="74" class="red 10">Bonammer Bonusを着用するときは、魔法のシールドを保護します</option>
+        <option value="75" class="red 10">シールドマスターシールド保護ボーナス</option>
+        <option value="76" class="red 10">シールドマスターシールドマジックマリアボーナス</option>
+        <option value="77" class="red 10">シールドマスターシールドマジックプロテクションボーナス</option>
+        <option value="78" class="red 10">シールドマスターシールド着用時のクローズアップ自動ボーナス</option>
+        <option value="79" class="red 10">リモート自動機のボーナスを着ているシールドマスターシールド</option>
+        <option value="80" class="red 10">シールドされた習熟シールドの摩耗時の魔法自動防御ボーナス</option>
+        <option value="81" class="red 10">ヘビーアーマーマスターズザ・ザ・ザ・ザ・ヘイザー</option>
+        <option value="82" class="red 10">重装甲マスター鎧を着用するときの保護</option>
+        <option value="83" class="red 10">重いマーカーマスターズを着用するときの魔法の狂乱</option>
+        <option value="84" class="red 10">重装甲マスターを着用するときの魔法の保護</option>
+        <option value="85" class="red 10">重い装甲の習熟鎧を着ているときのクローズアップ自動ルーム</option>
+        <option value="86" class="red 10">ヘビーアーマーマスターズ</option>
+        <option value="87" class="red 10">重装甲マスターを着ているときの魔法の自動車部屋</option>
+        <option value="88" class="red 10">ライトアーマーの習得の習得防御</option>
+        <option value="89" class="red 10">軽い装甲を身に着けているときの保護</option>
+        <option value="90" class="red 10">軽い装甲を身に着けているときの魔法の防衛</option>
+        <option value="91" class="red 10">ライトアーマーマスターズによって書かれました</option>
+        <option value="92" class="red 20">最終ストライク移動移動距離</option>
+        <option value="93" class="red 20">最終的なストライク期間</option>
+        <option value="94" class="red 20">最終ストライククールな時間の削減</option>
+        <option value="95" class="red 20">STAMFEED KUNTIMETIMEの削減</option>
+        <option value="96" class="red 20">STAMFEED近接バトルスキルの強化効果が増加しました</option>
+
+
+  		</select>
+
+  	</form>
+
+  	<script>
+  		//この中にドロップダウンリストを連動させるための
+  		//jQueryのコードを記述していきます。
+      $(function() {
+
+      	// 国名が変更されたら発動
+      	$('select[name="country"]').change(function() {
+
+      		// 選択されている国のクラス名を取得
+      		var countyName = $('select[name="country"] option:selected').attr("class");
+      		console.log(countyName);
+
+      		// 都市名の要素数を取得
+      		var count = $('select[name="city"]').children().length;
+
+      		// 都市名の要素数分、for文で回す
+      		for (var i=0; i<count; i++) {
+
+      			var city = $('select[name="city"] option:eq(' + i + ')');
+
+      			if(city.attr("class").match(countyName)) {
+
+      				// 選択した国と同じクラス名だった場合
+
+      				// 都市の要素を表示
+      				city.show();
+      			}else {
+      				// 選択した国とクラス名が違った場合
+
+      				// 都市の要素を非表示
+      				city.hide();
+      			}
+      		}
+      	})
+      })
+  	</script>
+
+
+
+</body>
