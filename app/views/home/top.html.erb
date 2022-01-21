@@ -4,97 +4,39 @@
 
 
 <body>
-<!--
-何故かこの書き方ではonchangeが働かない。form_withはonchangeの書き方が不明。
-完成させることの方が大事。
-<%= form_with do |f| %>
-  <%= f.select :ecolor, ["Red", "Blue", "Yellow", "Black", "Silver"] %>
-<% end %>
-
-<select id="ecolor2" onchange="myfunc()">
-    <option value="" selected>Please select...</option>
-    <option value="red">Red</option>
-    <option value="blue">Blue</option>
-    <option value="yellow">Yellow</option>
-    <option value="black">Black</option>
-    <option value="silver">Silver</option>
-</select>
-
-<script>
-    function myfunc() {
-
-        var index = document.getElementById("ecolor2").selectedIndex;
-        var value = document.getElementById("ecolor2").value;
-
-        console.log("You have selected" + value+ ", with index "+index);
-    }
-</script>
-
-<script>
-'use strict';
-
-document.getElementById('ecolor').onchange = myfunc();
-function myfunc(){};
-
-</script>
-
-
-<%= form_with do |f| %>
-  <%= f.select :lnumber,[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]%>
-<% end %>
--->
-<p>Where do you live?</p>
-
-  <select id="ecolor" onchange="myfunc()">
-      <option value="" selected>Please select...</option>
-      <option value="red">Red</option>
-      <option value="blue">Blue</option>
-      <option value="yellow">Yellow</option>
-      <option value="black">Black</option>
-      <option value="silver">Silver</option>
-  </select>
-  <p id="target">
-  </p>
-
-  <script>
-      function myfunc() {
-        var index = document.getElementById("ecolor").selectedIndex;
-        var value = document.getElementById("ecolor").value;
-        console.log("You have selected " + value+ ", with index "+index);
-      }
-  </script>
-
-
-
-  <%= form_with(model:@testtest , url: home_top_path) do |f| %>
-    <%= f.collection_select :effect , @redeff.all, :effectjp, :effectjp %>
-  <% end %>
-
-
-
   <form action="" method="post">
 
-  		<p>国を選択して下さい</p>
-  		<select name="country">
-  			<option value="Japan" selected="selected" class="msg">1番目の要素を選択して下さい</option>
-  			<option value="red" class="red">red</option>
-  			<option value="America" class="America">アメリカ</option>
-  			<option value="Australia" class="Australia">オーストラリア</option>
+  		<select id ="ecolor" name="ecolor">
+  			<option value="red" selected="selected" class="red">Red</option>
+  			<option value="blue" class="blue">Blue</option>
+  			<option value="yellow" class="yellow">Yellow</option>
+        <option value="black" class="black">Black</option>
+  			<option value="silver" class="silver">Silver</option>
   		</select>
 
-  		<p>都市を選択して下さい</p>
-  		<select name="city">
-  			<!--<option value="Japan" selected="selected" class="msg">都市を選択して下さい</option>
-      初めの動作がで都市が選択できてしまう。-->
-        <option value="msg" selected="selected" class="msg">都市を選択して下さい</option>
-  			<option value="Tokyo" class="japan">東京</option>
-  			<option value="Kyoto" class="japan">京都</option>
-  			<option value="Osaka" class="japan">大阪</option>
-  			<option value="NY" class="America">ニューヨーク</option>
-  			<option value="LA" class="America">ロサンゼルス</option>
-  			<option value="Sydney" class="Australia">シドニー</option>
+      <script>
+        //赤を選択し直しても、effect選択肢が絞られない。
+        window.onload = function(){
+          $('#ecolor').val("red");
+          //console.log("ecolor")
+        }
+      </script>
 
-        <option value="2" class="red"  class = "3">健康</option>
+
+
+
+  		<p>都市を選択して下さい</p>
+  		<select id = "effjp" name="effjp">
+        <!--<option value="Japan" selected="selected" class="msg">都市を選択して下さい</option>
+        初めの動作がで都市が選択できてしまう。-->
+        <option value="msg" selected="selected" class="msg">効果</option>
+        <option value="Tokyo" class="japan">東京</option>
+        <option value="Kyoto" class="japan">京都</option>
+        <option value="Osaka" class="japan">大阪</option>
+        <option value="NY" class="America">ニューヨーク</option>
+        <option value="LA" class="America">ロサンゼルス</option>
+        <option value="Sydney" class="Australia">シドニー</option>
+        <option value="2" class="red 3">健康</option>
         <option value="3" class="red 10">急いでいる睡蓮の経験</option>
         <option value="4" class="red 10">防衛睡蓮の経験</option>
         <option value="5" class="red 10">ランス職業訓練経験</option>
@@ -193,6 +135,33 @@ function myfunc(){};
 
   		</select>
 
+      <select id="efflevel" name="efflevel">
+  			<!--<option value="Japan" selected="selected" class="msg">都市を選択して下さい</option>
+      初めの動作がで都市が選択できてしまう。-->
+        <option value="0" selected="selected" class="0">レベルを選択して下さい</option>
+  			<option value="1" class="1">1</option>
+        <option value="2" class="2">2</option>
+        <option value="3" class="3">3</option>
+        <option value="4" class="4">4</option>
+        <option value="5" class="5">5</option>
+        <option value="6" class="6">6</option>
+        <option value="7" class="7">7</option>
+        <option value="8" class="8">8</option>
+        <option value="9" class="9">9</option>
+        <option value="10" class="10">10</option>
+        <option value="11" class="11">11</option>
+        <option value="12" class="12">12</option>
+        <option value="13" class="13">13</option>
+        <option value="14" class="14">14</option>
+        <option value="15" class="15">15</option>
+        <option value="16" class="16">16</option>
+        <option value="17" class="17">17</option>
+        <option value="18" class="18">18</option>
+        <option value="19" class="19">19</option>
+        <option value="20" class="20">20</option>
+
+  		</select>
+
   	</form>
 
   	<script>
@@ -200,37 +169,74 @@ function myfunc(){};
   		//jQueryのコードを記述していきます。
       $(function() {
 
-      	// 国名が変更されたら発動
-      	$('select[name="country"]').change(function() {
+      	// 色が変更されたら発動
+      	$('select[name="ecolor"]').change(function() {
+          $('#effjp').val("msg");
+          $('#efflevel').val("0");
+          console.log(efflevel.value)
+      		// 選択されている色のクラス名を取得
+      		var eColor = $('select[name="ecolor"] option:selected').attr("class");
 
-      		// 選択されている国のクラス名を取得
-      		var countyName = $('select[name="country"] option:selected').attr("class");
-      		console.log(countyName);
+      		// 効果の要素数を取得
+      		var count = $('select[name="effjp"]').children().length;
 
-      		// 都市名の要素数を取得
-      		var count = $('select[name="city"]').children().length;
-
-      		// 都市名の要素数分、for文で回す
+      		// 効果の要素数分、for文で回す
       		for (var i=0; i<count; i++) {
 
-      			var city = $('select[name="city"] option:eq(' + i + ')');
+      			var effect = $('select[name="effjp"] option:eq(' + i + ')');
 
-      			if(city.attr("class").match(countyName)) {
-
-      				// 選択した国と同じクラス名だった場合
-
-      				// 都市の要素を表示
-      				city.show();
+      			if(effect.attr("class").includes(eColor)) {
+      				// 選択した色と同じクラス名だった場合
+      				// 効果の要素を表示
+      				effect.show();
       			}else {
-      				// 選択した国とクラス名が違った場合
-
+      				// 選択したとクラス名が違った場合
       				// 都市の要素を非表示
-      				city.hide();
+      				effect.hide();
       			}
       		}
       	})
       })
   	</script>
+
+
+    <script>
+  		//この中にドロップダウンリストを連動させるための
+  		//jQueryのコードを記述していきます。
+      //name effjp      class red 1
+      //name efflevel   class 18
+      $(function() {
+
+      	// 色が変更されたら発動
+      	$('select[name="ecolor"]').change(function() {
+          $('#efflevel').val("0");//修正済み
+
+      		// 選択されている色のクラス名を取得
+      		var eColor = $('select[name="ecolor"] option:selected').attr("class");
+
+
+      		// 効果の要素数を取得
+      		var count = $('select[name="effjp"]').children().length;
+
+      		// 効果の要素数分、for文で回す
+      		for (var i=0; i<count; i++) {
+
+      			var effect = $('select[name="effjp"] option:eq(' + i + ')');
+
+      			if(effect.attr("class").includes(eColor)) {
+      				// 選択した色と同じクラス名だった場合
+      				// 効果の要素を表示
+      				effect.show();
+      			}else {
+      				// 選択したとクラス名が違った場合
+      				// 都市の要素を非表示
+      				effect.hide();
+      			}
+      		}
+      	})
+      })
+  	</script>
+
 
 
 
