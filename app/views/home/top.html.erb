@@ -25,11 +25,11 @@
 
 
 
-  		<p>都市を選択して下さい</p>
+  		<p>効果を選択して下さい</p>
   		<select id = "effjp" name="effjp">
         <!--<option value="Japan" selected="selected" class="msg">都市を選択して下さい</option>
         初めの動作がで都市が選択できてしまう。-->
-        <option value="msg" selected="selected" class="msg">効果</option>
+        <option value="msg" selected="selected" class="msg 0">効果</option>
         <option value="Tokyo" class="japan">東京</option>
         <option value="Kyoto" class="japan">京都</option>
         <option value="Osaka" class="japan">大阪</option>
@@ -164,6 +164,7 @@
 
   	</form>
 
+
   	<script>
   		//この中にドロップダウンリストを連動させるための
   		//jQueryのコードを記述していきます。
@@ -173,7 +174,7 @@
       	$('select[name="ecolor"]').change(function() {
           $('#effjp').val("msg");
           $('#efflevel').val("0");
-          console.log(efflevel.value)
+
       		// 選択されている色のクラス名を取得
       		var eColor = $('select[name="ecolor"] option:selected').attr("class");
 
@@ -203,34 +204,36 @@
     <script>
   		//この中にドロップダウンリストを連動させるための
   		//jQueryのコードを記述していきます。
-      //name effjp      class red 1
-      //name efflevel   class 18
       $(function() {
 
-      	// 色が変更されたら発動
-      	$('select[name="ecolor"]').change(function() {
-          $('#efflevel').val("0");//修正済み
+      	// 効果が変更されたら発動
+      	$('select[name="effjp"]').change(function() {
+          $('#efflevel').val("0");
 
-      		// 選択されている色のクラス名を取得
-      		var eColor = $('select[name="ecolor"] option:selected').attr("class");
+      		// 選択されている効果のクラス名を取得
+      		var efflv = $('select[name="effjp"] option:selected').attr("class");
+              efflv = Number(efflv.substring(efflv.length -2).trim());
+              //console.log(efflv)
 
 
-      		// 効果の要素数を取得
-      		var count = $('select[name="effjp"]').children().length;
+      		// レベルの要素数を取得
+      		var count = 21;
 
-      		// 効果の要素数分、for文で回す
+      		// レベルの要素数分、for文で回す
       		for (var i=0; i<count; i++) {
 
-      			var effect = $('select[name="effjp"] option:eq(' + i + ')');
+      			var level = $('select[name="efflevel"] option:eq(' + i + ')');
 
-      			if(effect.attr("class").includes(eColor)) {
-      				// 選択した色と同じクラス名だった場合
-      				// 効果の要素を表示
-      				effect.show();
+      			if(i <= efflv){
+      				// 選択した効果と同じクラス名だった場合
+      				// レベルの要素を表示
+              level.show();
+
       			}else {
-      				// 選択したとクラス名が違った場合
-      				// 都市の要素を非表示
-      				effect.hide();
+      				// 選択した効果とクラス名が違った場合
+      				// レベルの要素を非表示
+              level.hide();
+
       			}
       		}
       	})
